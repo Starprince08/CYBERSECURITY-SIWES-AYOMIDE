@@ -1,1 +1,0 @@
-Screenshots of scans that were outside the approved scope (wrong domain axia.org -> 89.46.108.70; mistyped IP 107.67.155.107). Kept for your supervisor's review. They are not used as findings in the report. Do not scan these addresses again.
