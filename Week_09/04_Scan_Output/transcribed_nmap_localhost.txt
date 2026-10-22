@@ -1,0 +1,12 @@
+# TRANSCRIPTION of Evidence_22 (screenshot). This is typed from the screenshot, not the raw Nmap/DNS output file.
+# Replace it with your original file from Kali if you have one.
+
+$ nmap -oN nmap_localhost.txt 127.0.0.1
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-21 17:56 EDT
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000050s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds

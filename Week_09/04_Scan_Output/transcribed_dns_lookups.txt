@@ -1,0 +1,42 @@
+# TRANSCRIPTION of Evidence_10 to Evidence_15 (screenshot). This is typed from the screenshot, not the raw Nmap/DNS output file.
+# Replace it with your original file from Kali if you have one.
+
+$ dig axiahub.org +short
+172.67.155.107
+104.21.90.95
+
+$ nslookup axiahub.org
+Server:         172.20.10.1
+Address:        172.20.10.1#53
+Non-authoritative answer:
+Name:   axiahub.org  Address: 172.67.155.107
+Name:   axiahub.org  Address: 104.21.90.95
+Name:   axiahub.org  Address: 2606:4700:3035::ac43:9b6b
+Name:   axiahub.org  Address: 2606:4700:3032::6815:5a5f
+
+$ dig axiahub.org NS +short
+memphis.ns.cloudflare.com.
+emma.ns.cloudflare.com.
+
+$ whois axiahub.org | head -30 (key lines)
+Domain Name: axiahub.org
+Updated Date: 2026-08-12T03:16:36Z
+Creation Date: 2022-02-14T13:05:49Z
+Registry Expiry Date: 2027-02-14T13:05:49Z
+Registrar: OwnRegistrar, Inc.
+Domain Status: clientTransferProhibited
+Name Server: emma.ns.cloudflare.com
+Name Server: memphis.ns.cloudflare.com
+DNSSEC: unsigned
+
+$ whois 172.67.155.107 | head -40 (key lines)
+NetRange: 172.64.0.0 - 172.71.255.255
+CIDR: 172.64.0.0/13
+NetName: CLOUDFLARENET
+Organization: Cloudflare, Inc. (CLOUD14)
+
+$ whois 104.21.90.95 | head -40 (key lines)
+NetRange: 104.16.0.0 - 104.31.255.255
+CIDR: 104.16.0.0/12
+NetName: CLOUDFLARENET
+Organization: Cloudflare, Inc. (CLOUD14)

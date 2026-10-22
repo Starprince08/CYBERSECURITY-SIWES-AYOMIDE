@@ -1,0 +1,12 @@
+WEEK 6 COMMAND LOG - Ayeni Ayomide Caleb
+Kali Linux 2025.1c VM (VirtualBox). Times are the VM clock (EDT). Date: 2026-10-21.
+Case: Axia Hub (axiahub.org).
+
+ 1. 2026-10-21 17:35-17:43 | dig, nslookup and whois on axiahub.org; whois on 172.67.155.107 and 104.21.90.95 | target: axiahub.org and its two Cloudflare IPv4 addresses | Passive lookups
+ 2. 2026-10-21 17:45 | nmap -sT -p 22,80,443 -oN nmap_target.txt 104.21.90.95 | target: 104.21.90.95 (Cloudflare address for axiahub.org) | The brief's limited scan
+ 3. 2026-10-21 17:50-17:51 | nmap --version; nmap -h | target: none | Version and help evidence
+ 4. 2026-10-21 17:53 | nmap -oN nmap_localhost.txt 104.21.90.95 | target: 104.21.90.95 | Additional default-port scan, wider than the limited scan
+ 5. 2026-10-21 17:56 | nmap -oN nmap_localhost.txt 127.0.0.1 | target: 127.0.0.1 (my own VM) | Localhost scan; final content of nmap_localhost.txt
+
+Passive lookups in scope: dig axiahub.org +short; nslookup axiahub.org; dig axiahub.org NS +short; whois axiahub.org | head -30; whois 172.67.155.107 | head -40; whois 104.21.90.95 | head -40
+Also run: nmap --version (17:50); nmap -h (17:51); date (17:43, 17:46)

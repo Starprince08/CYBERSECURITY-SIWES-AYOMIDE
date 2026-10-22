@@ -1,0 +1,17 @@
+# TRANSCRIPTION of Evidence_20 (screenshot). This is typed from the screenshot, not the raw Nmap/DNS output file.
+# Replace it with your original file from Kali if you have one.
+
+$ nmap -sT -p 22,80,443 -oN nmap_target.txt 104.21.90.95
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-21 17:45 EDT
+Nmap scan report for 104.21.90.95
+Host is up (0.0017s latency).
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  filtered http
+443/tcp filtered https
+
+Nmap done: 1 IP address (1 host up) scanned in 13.12 seconds
+
+$ date
+Wed Oct 21 05:46:02 PM EDT 2026
